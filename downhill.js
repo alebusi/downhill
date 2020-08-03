@@ -44,7 +44,7 @@ function randomIntFromInterval(min,max) {
 
 function disegnaMattoni() {
     coloraMattoni();
-    myTimerBlack = setInterval(coloraMattoni, 4000);
+    myTimerBlack = setInterval(coloraMattoni, 3500);
 }
   
   
