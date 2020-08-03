@@ -7,9 +7,9 @@ var indSave = 0;
 
 function verTastoPremuto(e) {
   if (e.keyCode == 37) {
-      dir=-1;
+      dir=-2;
   } else if (e.keyCode == 39) {
-      dir=1;
+      dir=2;
   }
   muoviPallaT(dir);
 }
@@ -30,7 +30,7 @@ function muoviPalla(direction) {
       if (pos > 90) pos=90;
       if (pos < 10) pos=10;
       document.getElementById("elemento").style.left=pos+"%";
-	  }, 24);
+	  }, 36);
 }
 
 function resetInt() {
