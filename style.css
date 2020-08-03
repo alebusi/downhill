@@ -13,9 +13,10 @@ table {
     top: 100%;
     left: 50%;
     position: absolute;
+    border-collapse: collapse;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    animation: mymove 4s infinite;
+    animation: mymove 3s infinite;
     animation-timing-function: linear;
 }
 
@@ -23,13 +24,13 @@ td {
   margin: 0;
   padding: 0;
   width: 25vw;
-  height: 80px;
+  height: 30px;
   background-color: white;
 }
 
 #elemento {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
     top: 20%;
     left: 50%;
     position: absolute;
@@ -68,5 +69,5 @@ td {
 
 @keyframes mymove {
   0%   {top: 110%;}
-  100% {top: -6vw;}
+  100% {top: -15px;}
 }
