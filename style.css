@@ -16,7 +16,7 @@ table {
     border-collapse: collapse;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    animation: mymove 3s infinite;
+    animation: mymove 3.5s infinite;
     animation-timing-function: linear;
 }
 
