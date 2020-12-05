@@ -61,6 +61,6 @@ function coloraMattoni() {
           document.getElementById(caselle[step]).style.backgroundColor=colori[ind];
       }
       document.getElementById(caselle[ind]).style.backgroundColor="black";
-      document.getElementById("elemento").style.backgroundColor=colori[ind];
+      document.getElementById("elemento").style.backgroundColor="white"; //colori[ind];
       indSave=ind;
 }
