@@ -34,7 +34,7 @@ function muoviPalla(direction) {
       if (pos < 10) pos=10;
       document.getElementById("elemento").style.left=pos+"%";
       if (direction > 0) {rot+=30;} else {rot-=30;}
-      document.getElementById("uno").style.transform = "translate(-50%, -50%) rotate("+rot+"deg)";  
+      document.getElementById("elemento").style.transform = "translate(-50%, -50%) rotate("+rot+"deg)";  
 	  }, 36);
 }
 
