@@ -19,6 +19,7 @@ function muoviPallaT(direction) {
       if (pos > 90) pos=90;
       if (pos < 10) pos=10;
       document.getElementById("elemento").style.left=pos+"%";
+      document.getElementById("elemento").style.transform = "translate(-50%, -50%) rotate(30deg)"; 
 }
 
 function muoviPalla(direction) {
@@ -30,6 +31,7 @@ function muoviPalla(direction) {
       if (pos > 90) pos=90;
       if (pos < 10) pos=10;
       document.getElementById("elemento").style.left=pos+"%";
+      document.getElementById("uno").style.transform = "translate(-50%, -50%) rotate(30deg)"; 
 	  }, 36);
 }
 
