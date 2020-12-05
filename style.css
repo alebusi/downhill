@@ -29,14 +29,24 @@ td {
 }
 
 #elemento {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 20px;
     top: 20%;
     left: 50%;
     position: absolute;
     background-color: orange;
-    border-radius: 100px;
-    /* border: solid 8px white; */
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#elemento::after {
+    content: "";
+    width: 20px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background-color: inherit;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
