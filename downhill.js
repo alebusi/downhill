@@ -3,6 +3,7 @@ var colori = ["#FF3300","orange","#4285F4","#0F9D58"];
 var pos = 50;
 var dir = 1;
 var ind = 0;
+var rot= 0;
 var indSave = 0;
 
 function verTastoPremuto(e) {
@@ -19,7 +20,8 @@ function muoviPallaT(direction) {
       if (pos > 90) pos=90;
       if (pos < 10) pos=10;
       document.getElementById("elemento").style.left=pos+"%";
-      document.getElementById("elemento").style.transform = "translate(-50%, -50%) rotate(30deg)"; 
+      if (direction > 0) {rot+=30;} else {rot-=30;}
+      document.getElementById("elemento").style.transform = "translate(-50%, -50%) rotate("+rot+"deg)";  
 }
 
 function muoviPalla(direction) {
@@ -31,7 +33,8 @@ function muoviPalla(direction) {
       if (pos > 90) pos=90;
       if (pos < 10) pos=10;
       document.getElementById("elemento").style.left=pos+"%";
-      document.getElementById("uno").style.transform = "translate(-50%, -50%) rotate(30deg)"; 
+      if (direction > 0) {rot+=30;} else {rot-=30;}
+      document.getElementById("uno").style.transform = "translate(-50%, -50%) rotate("+rot+"deg)";  
 	  }, 36);
 }
 
